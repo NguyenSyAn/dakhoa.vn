@@ -1,0 +1,37 @@
+<?php
+$store_phone_number = $block->getPhoneNumber();
+?>
+
+<style>
+    .header_contact {
+        height: 1.3em;
+    }
+
+    .header_contact_sticky {
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+        opacity: 0.8;
+    }
+
+    a.header-contact-item{
+        font-size: 1.3em;
+        color: #696969;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+    a.header-contact-item:hover{
+        color: #407fff;
+        text-decoration: none;
+    }
+</style>
+
+<div class="header_contact">
+    <div class="header_contact_sticky">
+        <div class="container">
+            <a class="float-left header-contact-item d-none d-md-block" href=""><i class="fas fa-store"></i> <?= $block->getStreet() ?></a>
+            <a class="float-right header-contact-item" href="tel:<?=$store_phone_number?>"><i class="fas fa-phone"></i> <?=$store_phone_number?></a>
+        </div>
+    </div>
+</div>

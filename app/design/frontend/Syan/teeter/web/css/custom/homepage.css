@@ -1,0 +1,451 @@
+.page-main {
+    margin-top: 0;
+    max-width: 100%!important;
+}
+
+a.btn:visited {
+    color: #fff;
+}
+
+#maincontent {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.columns .column.main {
+    padding-bottom: 0;
+}
+
+#syan-banner-video {
+    position: relative;
+    height: 50vh;
+    min-height: 25em;
+    width: 100%;
+    overflow: hidden;
+}
+
+#syan-banner-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none!important;
+    max-height: none!important;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#syan-banner-video .container {
+    position: relative;
+    z-index: 2;
+}
+
+#syan-banner-video .overlay {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+#syan-banner-video h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.5em;
+    letter-spacing: 0.05em;
+    padding-bottom: 0.5em;
+}
+
+#syan-banner-video p {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
+
+
+/* ======================== START PROMISE ====================== */
+
+#syan-promise {
+    background-color: #f9f9f9;
+    text-transform: uppercase;
+    padding: 20px 0 10px 0;
+}
+
+#syan-promise p {
+    font-size: 1.15em;
+    font-weight: 300;
+    color: #333333;
+}
+
+#syan-promise i {
+    font-size: 2.25em;
+    padding-right: 0.2em;
+    vertical-align: middle;
+    color: #6d6d6d;
+}
+
+#syan-promise .blue-title {
+    color: #4080ff;
+    font-weight: 600;
+    font-size: 1.3em;
+    letter-spacing: 0.01em;
+    padding-top: 0.2em;
+}
+
+@media (min-width: 1200px) {
+    #syan-promise .container {
+        max-width: 1600px !important;
+    }
+}
+
+
+/* ======================== END PROMISE ====================== */
+
+
+/* ======================== START PRICING ========================== */
+
+#syan-pricing {
+    padding: 50px 0 100px 0;
+}
+
+#syan-pricing .ft__123--numbericon {
+    position: absolute;
+    -webkit-box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 10%;
+    height: 2em;
+    padding-top: 0.3em;
+    padding-left: 0.6em;
+    font-size: 1em;
+    font-weight: 500;
+    right: 0%;
+    margin-top: -10px;
+}
+
+#syan-pricing .ft__123--numbericon p {}
+
+#syan-pricing #out-stock {
+    width: 6.9em;
+    background: #d6162f;
+    color: #fff;
+}
+
+#syan-pricing #in-stock {
+    width: 6.5em;
+    background: #4080ff;
+    color: #fff;
+}
+
+#syan-pricing #best-seller {
+    width: 6em;
+    background: #4080ff;
+    color: #fff;
+}
+
+#syan-pricing .card {
+    border: none;
+    border-radius: 1em;
+    transition: all 0.2s;
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
+}
+
+#syan-pricing img {
+    padding: 0em 6em;
+}
+
+#syan-pricing hr {
+    margin: 1.5em 0;
+}
+
+#syan-pricing .card-title {
+    margin: 0.5em 0;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+#syan-pricing .card-price {
+    font-size: 3em;
+    margin: 0;
+}
+
+#syan-pricing .card-price .period {
+    font-size: 0.8em;
+}
+
+#syan-pricing ul li {
+    margin-bottom: 1em;
+}
+
+#syan-pricing .text-muted {
+    opacity: 0.7;
+}
+
+#syan-pricing .btn {
+    font-size: 80%;
+    border-radius: 5em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding: 1em;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+#syan-pricing .description {
+    padding-bottom: 50px;
+}
+
+#syan-pricing .description h1 {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 2.5em;
+    color: #4e4e4e;
+    padding-bottom: 20px;
+}
+
+#syan-pricing .description p {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #4e4e4e;
+    margin: 0;
+}
+
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    #syan-pricing .card:hover {
+        margin-top: -0.25em;
+        margin-bottom: 0.25em;
+        box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.3);
+    }
+    #syan-pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+
+/* ==================== END PRICING ====================== */
+
+
+/* ====================== START SHOWCASE ========================= */
+
+#syan-showcase {
+    background-color: #f9f9f9;
+}
+
+#syan-showcase .video-showcase {
+    position: relative;
+    height: 80vh;
+    min-height: 25em;
+    width: 100%;
+    overflow: hidden;
+}
+
+#syan-showcase .video-showcase video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none!important;
+    max-height: none!important;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#syan-showcase .description {
+    padding: 2em 1em 1em 1em;
+    font-size: 1.15em;
+    color: #404040;
+}
+
+#syan-showcase .description h1 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+#syan-showcase .description p {
+    margin: 0;
+    max-width: 700px;
+}
+
+#syan-showcase a {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0.5em 0;
+    text-transform: capitalize;
+    margin-top: 50px;
+    width: 70%;
+    border-radius: 0.5em;
+}
+
+@media (min-width: 1200px) {
+    #syan-showcase .video-showcase {
+        height: 60vh;
+    }
+    #syan-showcase .description {
+        padding: 3em 5em 1em 5em;
+    }
+}
+
+
+/* ====================== END SHOWCASE ========================= */
+
+
+/* ======================== START HOW ============================ */
+
+#syan-how {
+    padding: 3em 0;
+    color: #505050;
+}
+
+#syan-how .ft__123--numbericon {
+    position: absolute;
+    -webkit-box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    font-size: 1.3em;
+    font-weight: 500;
+    right: 45%;
+    margin-top: -24px;
+    background: #fff;
+}
+
+#syan-how .ft__123--numbericon p {
+    margin-top: 0.3em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#syan-how .description {
+    padding-bottom: 3em;
+    font-size: 1.15em;
+}
+
+#syan-how .description h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+#syan-how .description p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.75em;
+}
+
+#syan-how .card {
+    margin: 0px 10px;
+    border: none;
+    border-radius: 1em;
+    transition: all 0.2s;
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
+}
+
+#syan-how .card-body {}
+
+#syan-how .card-body .card-title {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#syan-how .card-body .cart-text {}
+
+@media (max-width: 992px) {
+    #syan-how .card {
+        margin: 20px 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    #syan-how .card:hover {
+        margin-top: -0.25em;
+        margin-bottom: 0.25em;
+        box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.3);
+    }
+    #syan-how .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+
+/* ======================== END HOW ============================ */
+
+#syan-benefit {
+    background-color: #f9f9f9;
+}
+
+#syan-benefit .img-benefit {
+    position: relative;
+    height: 60vh;
+    min-height: 25em;
+    width: 100%;
+    overflow: hidden;
+}
+
+#syan-benefit .img-benefit img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#syan-benefit .description {
+    padding: 1em 1em 1em 1em;
+    font-size: 1.15em;
+    color: #404040;
+}
+
+#syan-benefit .description .title {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+#syan-benefit .description .text {
+    margin: 0;
+    max-width: 700px;
+    line-height: 1.5em;
+}
+
+@media (min-width: 1200px) {
+    #syan-benefit .description {
+        padding: 3em 5em 1em 5em;
+    }
+}

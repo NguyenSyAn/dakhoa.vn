@@ -1,0 +1,57 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- <referenceBlock name="store.menu" remove="true"/> -->
+        <referenceBlock name="store.links" remove="true"/>
+        <referenceBlock name="store.settings" remove="true"/>
+        <move element="minicart" destination="header.top.account" after="-"/>
+        <referenceContainer name="header.container">
+            <referenceContainer name="header.panel.wrapper" remove="true"/>
+            <referenceContainer name="header-wrapper" remove="true"/>
+            <block class="Syan\MagentoStore\Block\StoreInfo" name="header_contact" template="header_contact.phtml"/>
+            <container name="syan_header" htmlTag="div" htmlClass="header content">
+                <container name="header.top" htmlTag="div" htmlClass="header-top">
+                    <container name="header.top.container" htmlTag="div" htmlClass="container">
+                        <block class="Magento\Theme\Block\Html\Header\Logo" name="header_logo"/>
+                        <container name="header.top.account" htmlTag="div" htmlClass="header_account">
+                            <block class="Syan\MagentoCustomer\Block\Html\AccountLink" name="header_welcome_msg">
+                                <arguments>
+                                    <argument name="show_part" xsi:type="string">welcome</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                        <block class="Magento\Framework\View\Element\Template" name="header_search" template="Magento_Search::form.mini.phtml" />
+                    </container>
+                </container>
+                <container name="header.bottom" htmlTag="div" htmlClass="header-bootm">
+                </container>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="footer-container">
+            <container name="footer" htmlTag="div" htmlClass="footer content">
+                <container name="footer.top" htmlTag="div" htmlClass="footer-top">
+                    <container name="footer.top.container" htmlTag="div" htmlClass="container">
+                        <container name="footer.top.container.row" htmlTag="div" htmlClass="row">
+                            <container name="footer.top.container.row.about" htmlTag="div" htmlClass="col-md-4 footer-about">
+                                <block class="Magento\Theme\Block\Html\Header\Logo" name="logo-footer"/>
+                                <block class="Syan\MagentoStore\Block\StoreInfo" name="footer_about" template="footer_about.phtml"/>
+                            </container>
+                            <container name="footer.top.container.row.contact" htmlTag="div" htmlClass="col-md-5 footer-contact">
+                                <block class="Syan\MagentoStore\Block\StoreInfo" name="footer_contact" template="footer_contact.phtml"/>
+                            </container>
+                            <container name="footer.top.container.row.social" htmlTag="div" htmlClass="col-md-3 footer-social">
+                                <block class="Magento\Theme\Block\Html\Footer" name="footer_social" template="html/footer_social.phtml"/>
+                            </container>
+                        </container>
+                    </container>
+                </container>
+                <container name="footer.bottom" htmlTag="div" htmlClass="footer-bottom">
+                    <container name="footer.bottom.container" htmlTag="div" htmlClass="container">
+                        <container name="footer.bottom.container.row" htmlTag="div" htmlClass="row">
+                            <block class="Magento\Theme\Block\Html\Footer" name="footer_bottom" template="html/footer_bottom.phtml"/>
+                        </container>
+                    </container>
+                </container>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

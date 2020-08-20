@@ -1,0 +1,87 @@
+
+
+                                            <item name="shipping-step" xsi:type="array">
+                                                <item name="children" xsi:type="array">
+                                                    <item name="shippingAddress" xsi:type="array">
+                                                        <item name="children" xsi:type="array">
+                                                            <item name="shipping-address-fieldset" xsi:type="array">
+                                                                <item name="children" xsi:type="array">
+                                                                    <!-- The following items override configuration of corresponding address attributes -->
+                                                                    <!-- <item name="region" xsi:type="array">
+                                                                        <item name="visible" xsi:type="boolean">false</item>
+                                                                    </item>
+                                                                    <item name="region_id" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Magento_Ui/js/form/element/region</item>
+                                                                        <item name="config" xsi:type="array">
+                                                                            <item name="template" xsi:type="string">ui/form/field</item>
+                                                                            <item name="elementTmpl" xsi:type="string">ui/form/element/select</item>
+                                                                            <item name="customEntry" xsi:type="string">shippingAddress.region</item>
+                                                                        </item>
+                                                                        <item name="validation" xsi:type="array">
+                                                                            <item name="required-entry" xsi:type="boolean">true</item>
+                                                                        </item>
+                                                                        <item name="filterBy" xsi:type="array">
+                                                                            <item name="target" xsi:type="string"><![CDATA[${ $.provider }:${ $.parentScope }.country_id]]></item>
+                                                                            <item name="field" xsi:type="string">country_id</item>
+                                                                        </item>
+                                                                    </item> -->
+                                                                    <!-- <item name="postcode" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
+                                                                        <item name="validation" xsi:type="array">
+                                                                            <item name="required-entry" xsi:type="boolean">true</item>
+                                                                        </item>
+                                                                    </item>
+                                                                    <item name="company" xsi:type="array">
+                                                                        <item name="validation" xsi:type="array">
+                                                                            <item name="min_text_length" xsi:type="number">0</item>
+                                                                        </item>
+                                                                    </item>
+                                                                    <item name="fax" xsi:type="array">
+                                                                        <item name="validation" xsi:type="array">
+                                                                            <item name="min_text_length" xsi:type="number">0</item>
+                                                                        </item>
+                                                                    </item> -->
+                                                                    <item name="country_id" xsi:type="array">
+                                                                        <!-- <item name="sortOrder" xsi:type="string">115</item> -->
+                                                                        <!-- <item name="visible" xsi:type="boolean">false</item> -->
+                                                                        <!-- <item name="config" xsi:type="array">
+                                                                            <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                                        </item> -->
+                                                                    </item>
+                                                                    <!-- <item name="telephone" xsi:type="array">
+                                                                        <item name="config" xsi:type="array">
+                                                                            <item name="tooltip" xsi:type="array">
+                                                                                <item name="description" xsi:type="string" translate="true">For delivery questions.</item>
+                                                                            </item>
+                                                                        </item>
+                                                                    </item> -->
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+
+
+#009688
+
+#4080ff
+#d6162f
+
+#a8aeba
+
+#262626
+
+#9c9c9c >> #1a1a1a
+
+
+qazWSX@123OkM
+
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-password=qazWSX@123OkM --cache-backend-redis-db=0
+
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-password=qazWSX@123OkM --page-cache-redis-db=1
+
+redis-cli -a qazWSX@123OkM monitor
+
+bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=3 --session-save-redis-max-concurrency=12 --session-save-redis-password=qazWSX@123OkM --session-save-redis-db=2
+
