@@ -16432,3 +16432,9 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "Latest", "Mới nhất", module, Mageplaza_Blog
 "No Related Posts", "Không có bài viết nào liên quan", module, Mageplaza_Blog
 "Related Posts", "Bài viết liên quan", module, Mageplaza_Blog
+
+"We can't find posts matching the selection.", "Hiện tại chưa có bài viết nào", module, Magefan_Blog
+"Search posts here...", "Tìm bài viết...", module, Magefan_Blog
+"Recent Posts", "Bài viết gần đây", module, Magefan_Blog
+"Read more &#187;", "Đọc thêm &#187;", module, Magefan_Blog
+"Posted:", "Đăng ngày:", module, Magefan_Blog

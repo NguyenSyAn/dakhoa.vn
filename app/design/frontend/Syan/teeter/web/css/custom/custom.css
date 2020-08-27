@@ -401,5 +401,29 @@ a.btn.btn-block.btn-social.btn-facebook {
 
 /* ================= STICKY HEADER =============== */
 
+.header_contact {
+    height: 1.3em;
+}
+
+.header_contact_sticky {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    opacity: 0.8;
+}
+
+a.header-contact-item {
+    font-size: 1.3em;
+    color: #696969;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+a.header-contact-item:hover {
+    color: #407fff;
+    text-decoration: none;
+}
+
 
 /* ============= END STICKY HEADER =============== */

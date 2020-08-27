@@ -22,6 +22,7 @@ a.btn:visited {
     min-height: 25em;
     width: 100%;
     overflow: hidden;
+    color: #000;
 }
 
 #syan-banner-video video {
@@ -47,13 +48,13 @@ a.btn:visited {
 }
 
 #syan-banner-video .overlay {
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -136,7 +137,7 @@ a.btn:visited {
 #syan-pricing .ft__123--numbericon p {}
 
 #syan-pricing #out-stock {
-    width: 6.9em;
+    width: 6em;
     background: #d6162f;
     color: #fff;
 }
